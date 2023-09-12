@@ -4,10 +4,7 @@
 import java.io.File
 
 fun main(args: Array<String>) {
-    if (args.size != 5) {
-        println("Usage: kotlin InsertText.kt <directory> <file_extensions> <line_number> <text_to_insert> <size_threshold>")
-        return
-    }
+    if (args.size != 5) { return }
 
     val directory = File(args[0])
     val extensions = args[1].split(".")
@@ -26,18 +23,15 @@ fun main(args: Array<String>) {
         println("Inserted text into ${insertedFiles.size} files:")
         insertedFiles.forEach { println(it.absolutePath) }
         println("Total size of processed files: ${totalSize / (1024 * 1024)} MB")
-    } catch (e: Exception) {
-        println("An error occurred: ${e.message}")
-    }
+    } catch (e: Exception) { println("An error occurred: ${e.message}") }
 }
 
-fun processFiles(
-    directory: File,
+fun processFiles(directory: File,
     extensions: List<String>,
     lineNumber: Int,
     textToInsert: String,
-    sizeThreshold: Long
-): Pair<MutableList<File>, Long> {
+    sizeThreshold: Long): Pair<MutableList<File>, Long> 
+{
     val insertedFiles = mutableListOf<File>()
     var totalSize = 0L
 
