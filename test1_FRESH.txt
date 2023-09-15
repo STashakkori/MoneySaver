@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Going to add all kinds of test text into this document
 The idea is to insert text into this document
 
@@ -15,4 +16,23 @@ We'll see how this goes let me add some junk
 
 Ok end is near
 
+=======
+Going to add all kinds of test text into this document
+The idea is to insert text into this document
+
+It would be wise to add some blank lines in here as well
+
+We'll see how this goes let me add some junk
+##########################
+#######################################################
+####
+#
+##
+###
+####
+#############  ############### ################# #######
+
+Ok end is near
+
+>>>>>>> origin/main
 Here is the end
